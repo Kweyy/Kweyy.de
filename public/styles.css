@@ -1,0 +1,42 @@
+/*---------------- Global ----------------*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/*----------------Content----------------*/
+
+body{
+  align-items: center;
+  justify-content: center;
+  display: flex;
+}
+
+/*---------------- arrowAnimation ----------------*/
+
+.animation{
+  width: 100px;
+  animation-name: arrowDown;
+  animation-duration: 5s;
+  animation-timing-function: linear;
+  animation-delay: 1s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+
+/*###### Keyframe ######*/
+
+@keyframes arrowDown {
+    0% {
+      opacity: 0;
+    }
+    50% {
+      opacity: 1;
+      transform: scale(1.2);
+    }
+    100% {
+      opacity: 0;
+    }
+  }
+
